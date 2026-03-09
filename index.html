@@ -118,7 +118,8 @@
 
   /* Footer */
   .site-footer {
-    margin-left: var(--sidebar-w); padding: 24px 48px;
+    position: fixed; bottom: 0; left: var(--sidebar-w); right: 0;
+    padding: 12px 48px; z-index: 100;
     border-top: 1px solid var(--border); background: #fff;
     font-size: 13px; color: var(--text-light); text-align: center;
   }
@@ -141,7 +142,7 @@
     .sidebar.open { transform: translateX(0); }
     .hamburger { display: block; }
     .main { margin-left: 0; padding: 72px 20px 80px; }
-    .site-footer { margin-left: 0; padding: 24px 20px; }
+    .site-footer { left: 0; padding: 12px 20px; }
   }
 </style>
 </head>
