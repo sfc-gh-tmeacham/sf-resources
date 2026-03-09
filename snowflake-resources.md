@@ -15,6 +15,7 @@ A curated guide to Snowflake resources for practitioners at every level — from
   - [Local Development](#local-development)
   - [Runtimes & Frameworks](#runtimes--frameworks)
   - [DevOps & Observability](#devops--observability)
+  - [Migration](#migration)
 - [Streamlit](#streamlit)
 - [Data Engineering](#data-engineering)
   - [Ingestion](#ingestion)
@@ -45,9 +46,11 @@ Free Coursera courses created by Snowflake's developer advocates, including Intr
 Interactive hands-on tutorials, quickstarts, and reference architectures across data engineering, AI/ML, app development, and more.
 5. [Frosty Friday](https://frostyfriday.org/)  
 A series of weekly challenges released every Friday to help you practice and develop your Snowflake skills, created by Snowflake users, for Snowflake users.
-6. [Get SnowPro Certified](https://www.snowflake.com/certifications/)  
+6. [Snowsight Templates](https://docs.snowflake.com/en/user-guide/ui-snowsight/snowsight-templates)  
+Interactive in-browser walkthroughs for exploring Snowflake features and use cases. Pre-configured worksheets, notebooks, or Streamlit apps with sample data — typically completed in under five minutes.
+7. [Get SnowPro Certified](https://www.snowflake.com/certifications/)  
 Proctored exams at Associate, Core, Advanced (Architect, Data Engineer, Data Scientist, Administrator, Data Analyst, Security Engineer), and Specialty (Gen AI, Snowpark, Native Apps) levels.
-7. [Webinars](https://www.snowflake.com/about/webinars/)  
+8. [Webinars](https://www.snowflake.com/about/webinars/)  
 Live and on-demand webinars covering new features, best practices, and customer stories.
 
 
@@ -65,6 +68,8 @@ REST API for submitting SQL statements, checking execution status, and canceling
 Manage Snowflake objects — tables, warehouses, tasks, roles, stages, and more — programmatically in Python without writing SQL. Distinct from the Python Connector (driver) and Snowpark (data processing).
 6. [Snowflake Labs on GitHub](https://github.com/Snowflake-Labs)  
 470+ open-source repos including schemachange, sf-samples, demo notebooks, and quickstart companion code.
+7. [Snowflake Scripting](https://docs.snowflake.com/en/developer-guide/snowflake-scripting/index)  
+Procedural SQL extension for writing stored procedures, UDFs, and anonymous blocks. Covers variables, loops, cursors, RESULTSETs, conditional logic, and exception handling.
 
 
 ## General Resources
@@ -136,8 +141,15 @@ Managed PostgreSQL instances running on Snowflake for transactional and operatio
 
 1. [Snowflake DevOps](https://docs.snowflake.com/en/developer-guide/builders/devops)  
 Streamline the development lifecycle with Git integration, declarative object management (CREATE OR ALTER), parameterized Jinja templates, and CI/CD automation via Snowflake CLI and GitHub Actions.
-2. [Observability](https://docs.snowflake.com/en/developer-guide/builders/observability)  
+2. [Git Integration](https://docs.snowflake.com/en/developer-guide/git/git-overview)  
+Clone remote Git repositories (GitHub, GitLab, Bitbucket, Azure DevOps, AWS CodeCommit) into Snowflake. Sync branches, tags, and commits, execute SQL files directly, and push changes from Workspaces, Notebooks, and Streamlit apps.
+3. [Observability](https://docs.snowflake.com/en/developer-guide/builders/observability)  
 Instrument and monitor applications with OpenTelemetry-based logs, metrics, and traces collected in Snowflake event tables. Includes Snowsight visualizations, alerts, notifications, and third-party tool integration.
+
+### Migration
+
+1. [SnowConvert](https://docs.snowconvert.com/sc)  
+Automated code conversion tool that translates SQL from legacy platforms (Oracle, SQL Server, Teradata, Redshift, BigQuery, Spark, and more) into Snowflake-compatible SQL to accelerate migrations.
 
 
 ## Streamlit
@@ -262,7 +274,9 @@ Evaluate and monitor security risks in your account. Includes CIS benchmark scan
 Network policies, network rules, private connectivity, session policies, SCIM provisioning, and role-based access control (RBAC).
 5. [Data Clean Rooms](https://docs.snowflake.com/en/user-guide/cleanrooms/introduction)  
 Secure, isolated environments for privacy-preserving data collaboration. Combine and analyze data across organizations without exposing raw records.
-6. [Compliance Center](https://trust.snowflake.com/)  
+6. [Backups](https://docs.snowflake.com/en/user-guide/backups)  
+Point-in-time snapshots of tables, schemas, or databases for disaster recovery, regulatory compliance (SEC 17a-4, FINRA, CFTC), and cyber resilience. Supports scheduled backup policies, retention locks for immutable storage, and legal holds.
+7. [Compliance Center](https://trust.snowflake.com/)  
 Self-service portal to download Snowflake's security certifications and compliance reports — SOC 1/2, ISO 27001, FedRAMP, HITRUST, PCI-DSS, GxP, C5, IRAP, CJIS, TISAX, and more.
 
 
@@ -276,6 +290,8 @@ Set monthly spending limits with budgets (serverless + warehouses) or resource m
 Query 1 year of historical usage data — warehouse metering, query history, storage, logins, and more — from the shared SNOWFLAKE database.
 4. [Exploring Overall Cost](https://docs.snowflake.com/en/user-guide/cost-exploring-overall)  
 Pre-built Snowsight dashboards and sample queries using ORGANIZATION_USAGE and ACCOUNT_USAGE views to analyze credit consumption across accounts.
+5. [Storage Lifecycle Policies](https://docs.snowflake.com/en/user-guide/storage-management/storage-lifecycle-policies-create-manage)  
+Automate row-level data archival and expiration with policy-driven SQL expressions. Move aging rows to lower-cost storage tiers and expire them after a configurable retention period.
 
 
 ## Snowflake Status and Release Notes
