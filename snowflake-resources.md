@@ -3,6 +3,24 @@
 ## Overview
 A curated guide to Snowflake resources for practitioners at every level — from getting started with free training to building production pipelines, deploying AI, and operating securely at scale.
 
+## Table of Contents
+- [Learning & Certification](#learning--certification)
+- [Developer References](#developer-references)
+- [General Resources](#general-resources)
+- [Media](#media)
+- [Community / Forums](#community--forums)
+- [Blogs](#blogs)
+- [Developer Tools](#developer-tools)
+- [Streamlit](#streamlit)
+- [Data Engineering](#data-engineering)
+- [Cortex AI & Generative AI](#cortex-ai--generative-ai)
+- [Machine Learning](#machine-learning)
+- [Governance & Security](#governance--security)
+- [Cost Management](#cost-management)
+- [Snowflake Status and Release Notes](#snowflake-status-and-release-notes)
+- [Snowflake Marketplace](#snowflake-marketplace)
+- [Industry Solutions](#industry-solutions)
+
 
 ## Learning & Certification
 
