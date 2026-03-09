@@ -93,6 +93,7 @@
     background: var(--card-bg); border: 1px solid var(--border);
     border-radius: 8px; padding: 16px 20px; margin-bottom: 10px;
     transition: border-color 0.15s, box-shadow 0.15s;
+    cursor: pointer;
   }
   .resource:hover { border-color: var(--blue); box-shadow: 0 2px 8px rgba(41,181,232,0.1); }
   .resource a {
@@ -115,6 +116,13 @@
   }
   #back-to-top:hover { background: var(--blue-dark); }
 
+  /* Footer */
+  .site-footer {
+    margin-left: var(--sidebar-w); padding: 24px 48px;
+    border-top: 1px solid var(--border); background: #fff;
+    font-size: 13px; color: var(--text-light); text-align: center;
+  }
+
   /* Hamburger */
   .hamburger {
     display: none; position: fixed; top: 12px; left: 12px;
@@ -133,6 +141,7 @@
     .sidebar.open { transform: translateX(0); }
     .hamburger { display: block; }
     .main { margin-left: 0; padding: 72px 20px 80px; }
+    .site-footer { margin-left: 0; padding: 24px 20px; }
   }
 </style>
 </head>
@@ -396,6 +405,10 @@
 
 </div>
 
+<footer class="site-footer">
+  <p><strong>Disclaimer:</strong> This is an independently maintained resource and is not an official Snowflake asset. It is not affiliated with, endorsed by, or sponsored by Snowflake Inc.</p>
+</footer>
+
 <button id="back-to-top" onclick="window.scrollTo({top:0})">&#8593;</button>
 
 <script>
@@ -412,6 +425,15 @@
       sec.style.display = (q && visible === 0) ? 'none' : '';
     });
   }
+
+  // Make entire resource card clickable
+  document.querySelectorAll('.resource').forEach(card => {
+    card.addEventListener('click', e => {
+      if (e.target.tagName === 'A') return; // let native link behavior handle it
+      const link = card.querySelector('a');
+      if (link) window.open(link.href, '_blank', 'noopener');
+    });
+  });
 
   // Back to top button
   window.addEventListener('scroll', () => {
