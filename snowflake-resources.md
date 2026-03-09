@@ -11,8 +11,17 @@ A curated guide to Snowflake resources for practitioners at every level — from
 - [Community / Forums](#community--forums)
 - [Blogs](#blogs)
 - [Developer Tools](#developer-tools)
+  - [In-Browser Editors](#in-browser-editors)
+  - [Local Development](#local-development)
+  - [Runtimes & Frameworks](#runtimes--frameworks)
+  - [DevOps & Observability](#devops--observability)
 - [Streamlit](#streamlit)
 - [Data Engineering](#data-engineering)
+  - [Ingestion](#ingestion)
+  - [Data Types & Formats](#data-types--formats)
+  - [Table Types & Storage](#table-types--storage)
+  - [Processing & Pipelines](#processing--pipelines)
+  - [Semantic Layer](#semantic-layer)
 - [Cortex AI & Generative AI](#cortex-ai--generative-ai)
 - [Machine Learning](#machine-learning)
 - [Governance & Security](#governance--security)
@@ -20,6 +29,8 @@ A curated guide to Snowflake resources for practitioners at every level — from
 - [Snowflake Status and Release Notes](#snowflake-status-and-release-notes)
 - [Snowflake Marketplace](#snowflake-marketplace)
 - [Industry Solutions](#industry-solutions)
+  - [Industries](#industries)
+  - [Departments](#departments)
 
 
 ## Learning & Certification
@@ -78,10 +89,10 @@ Interviews with data and engineering leaders on architecture, strategy, and real
 
 1. [Snowflake Community](https://community.snowflake.com/s/)  
 Q&A forums, how-to guides, and the Data Superhero recognition program.
-2. [Snowflake on Stack Overflow](https://stackoverflow.com/questions/tagged/snowflake-cloud-data-platform?tab=Active)  
-Ask and answer the most challenging technical questions related to Snowflake.
-3. [Snowflake subreddit](https://www.reddit.com/r/snowflake/)  
-Unofficial subreddit for discussion relating to the Snowflake Data Cloud.
+2. [Data Superheroes](https://www.snowflake.com/en/data-superheroes/)  
+Elite group of Snowflake experts recognized for educating the community through blogs, videos, talks, and forum contributions. Yearly cohort with VIP event access and product roadmap previews.
+3. [Snowflake Squad](https://www.snowflake.com/en/snowflake-squad/)  
+Community program recognizing active online advocates — forum contributors, social media posters, content creators, and user group participants.
 
 
 ## Blogs
@@ -94,24 +105,39 @@ Best practices, tips & tricks from Snowflake experts and community. Submissions 
 
 ## Developer Tools
 
+### In-Browser Editors
+
 1. [Workspaces](https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces)  
 Unified SQL editor in Snowsight with file-based organization, side-by-side results, inline Copilot, and Git integration. Replacing Worksheets as the default editor.
 2. [Snowflake Notebooks](https://docs.snowflake.com/en/user-guide/ui-snowsight/notebooks)  
 Jupyter-like notebooks running directly in Snowflake with SQL, Python, and Markdown. Available in Warehouse Runtime or Container Runtime (with GPU support).
 3. [Notebooks in Workspaces](https://docs.snowflake.com/en/user-guide/ui-snowsight/notebooks-in-workspaces/notebooks-in-workspaces-overview)  
 Enhanced notebook experience with full Jupyter compatibility, terminal access, file management, and a pre-built container runtime optimized for AI/ML with CPU and GPU support.
-4. [Snowflake Extension for VS Code](https://docs.snowflake.com/en/user-guide/vscode-ext)  
+
+### Local Development
+
+1. [Snowflake Extension for VS Code](https://docs.snowflake.com/en/user-guide/vscode-ext)  
 Write and execute SQL directly in VS Code with autocomplete, syntax highlighting, and Snowpark Python debugging. Includes object explorer, query history, and Native App support.
-5. [Snowflake CLI (`snow`)](https://docs.snowflake.com/en/developer-guide/snowflake-cli/index)  
+2. [Snowflake CLI (`snow`)](https://docs.snowflake.com/en/developer-guide/snowflake-cli/index)  
 The modern, open-source CLI for developer-centric workloads. Manages Streamlit apps, Native Apps, Snowpark, SPCS, notebooks, and SQL execution. Replaces legacy SnowSQL.
-6. [Cortex Code](https://www.snowflake.com/en/product/features/cortex-code/)  
+3. [Cortex Code](https://www.snowflake.com/en/product/features/cortex-code/)  
 AI coding agent for Snowflake development. Generates, explains, and optimizes SQL and Python while respecting your warehouse's schemas and governance policies.
-7. [Snowpark Container Services (SPCS)](https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview)  
+
+### Runtimes & Frameworks
+
+1. [Snowpark Container Services (SPCS)](https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview)  
 Run OCI-compatible containerized applications, ML models, and custom services on Snowflake-managed compute pools with GPU support.
-8. [Snowflake Native App Framework](https://docs.snowflake.com/en/developer-guide/native-apps/native-apps-about)  
+2. [Snowflake Native App Framework](https://docs.snowflake.com/en/developer-guide/native-apps/native-apps-about)  
 Build, distribute, and monetize applications through the Snowflake Marketplace. Supports Snowpark, Streamlit, and containerized components.
-9. [Snowflake Postgres](https://docs.snowflake.com/en/user-guide/snowflake-postgres/about)  
+3. [Snowflake Postgres](https://docs.snowflake.com/en/user-guide/snowflake-postgres/about)  
 Managed PostgreSQL instances running on Snowflake for transactional and operational workloads. Fully compatible with existing Postgres tooling, ORMs, and SQL clients — no code changes required.
+
+### DevOps & Observability
+
+1. [Snowflake DevOps](https://docs.snowflake.com/en/developer-guide/builders/devops)  
+Streamline the development lifecycle with Git integration, declarative object management (CREATE OR ALTER), parameterized Jinja templates, and CI/CD automation via Snowflake CLI and GitHub Actions.
+2. [Observability](https://docs.snowflake.com/en/developer-guide/builders/observability)  
+Instrument and monitor applications with OpenTelemetry-based logs, metrics, and traces collected in Snowflake event tables. Includes Snowsight visualizations, alerts, notifications, and third-party tool integration.
 
 
 ## Streamlit
@@ -132,40 +158,54 @@ Every folder is an independent Streamlit app containing code, setup scripts, and
 
 ## Data Engineering
 
+### Ingestion
+
+1. [Snowpipe](https://docs.snowflake.com/en/user-guide/data-load-snowpipe-intro)  
+Serverless, continuous data loading from files in cloud storage stages. Triggers automatically via cloud event notifications or on-demand through REST endpoints.
+2. [Snowpipe Streaming](https://docs.snowflake.com/en/user-guide/snowpipe-streaming/data-load-snowpipe-streaming-overview)  
+Low-latency, row-level ingestion directly into Snowflake tables — no staging files required. Supports SDK-based and REST API ingestion with sub-second data availability.
+3. [Snowflake Openflow](https://www.snowflake.com/en/product/features/openflow/)  
+Managed data integration service built on Apache NiFi. Connect virtually any data source with visual drag-and-drop flow creation for structured and unstructured data.
+
+### Data Types & Formats
+
+1. [Semi-Structured Data](https://docs.snowflake.com/en/user-guide/semistructured-intro)  
+Load and query JSON, Avro, Parquet, ORC, and XML using VARIANT, ARRAY, and OBJECT types. Supports automatic schema detection, hierarchical nesting, and direct SQL querying.
+2. [Unstructured Data](https://docs.snowflake.com/en/user-guide/unstructured-intro)  
+Access and process files (images, PDFs, audio, video) stored in stages. Provides scoped, file, and pre-signed URLs, directory tables, and the FILE data type for use in UDFs, stored procedures, and Document AI.
+3. [Geospatial Data Types & Functions](https://docs.snowflake.com/en/sql-reference/data-types-geospatial)  
+Native GEOGRAPHY and GEOMETRY types with WKT, WKB, GeoJSON, and EWKT support. Includes 80+ geospatial functions for spatial relationships, measurements, transformations, and H3 indexing.
+
+### Table Types & Storage
+
+1. [Apache Iceberg Tables](https://docs.snowflake.com/en/user-guide/tables-iceberg)  
+First-class Iceberg table support with Snowflake-managed or externally managed tables, catalog-linked databases, and cross-engine interoperability.
+2. [Hybrid Tables](https://docs.snowflake.com/en/user-guide/tables-hybrid)  
+Row-based table type optimized for low-latency, high-concurrency transactional workloads. Enforces primary key, foreign key, and unique constraints with row-level locking and index-based reads/writes.
+3. [Interactive Tables & Warehouses](https://docs.snowflake.com/en/user-guide/interactive)  
+Specialized tables and warehouses for sub-second query latency at high concurrency. Designed for real-time dashboards, data APIs, and serving precomputed results with auto-refresh support.
+4. [Snowflake Open Catalog](https://docs.snowflake.com/en/user-guide/opencatalog/overview)  
+Managed Iceberg REST catalog service built on Apache Polaris. Provides centralized, secure read/write access to Iceberg tables across REST-compatible query engines.
+
+### Processing & Pipelines
+
 1. [Dynamic Tables](https://docs.snowflake.com/en/user-guide/dynamic-tables-about)  
 Declarative data pipelines that automatically keep results up-to-date. Define the target state in SQL and let Snowflake handle incremental refresh.
-2. [Snowpipe](https://docs.snowflake.com/en/user-guide/data-load-snowpipe-intro)  
-Serverless, continuous data loading from files in cloud storage stages. Triggers automatically via cloud event notifications or on-demand through REST endpoints.
-3. [Snowpipe Streaming](https://docs.snowflake.com/en/user-guide/snowpipe-streaming/data-load-snowpipe-streaming-overview)  
-Low-latency, row-level ingestion directly into Snowflake tables — no staging files required. Supports SDK-based and REST API ingestion with sub-second data availability.
-4. [Snowflake Openflow](https://www.snowflake.com/en/product/features/openflow/)  
-Managed data integration service built on Apache NiFi. Connect virtually any data source with visual drag-and-drop flow creation for structured and unstructured data.
-5. [Semi-Structured Data](https://docs.snowflake.com/en/user-guide/semistructured-intro)  
-Load and query JSON, Avro, Parquet, ORC, and XML using VARIANT, ARRAY, and OBJECT types. Supports automatic schema detection, hierarchical nesting, and direct SQL querying.
-6. [Unstructured Data](https://docs.snowflake.com/en/user-guide/unstructured-intro)  
-Access and process files (images, PDFs, audio, video) stored in stages. Provides scoped, file, and pre-signed URLs, directory tables, and the FILE data type for use in UDFs, stored procedures, and Document AI.
-7. [Geospatial Data Types & Functions](https://docs.snowflake.com/en/sql-reference/data-types-geospatial)  
-Native GEOGRAPHY and GEOMETRY types with WKT, WKB, GeoJSON, and EWKT support. Includes 80+ geospatial functions for spatial relationships, measurements, transformations, and H3 indexing.
-8. [Apache Iceberg Tables](https://docs.snowflake.com/en/user-guide/tables-iceberg)  
-First-class Iceberg table support with Snowflake-managed or externally managed tables, catalog-linked databases, and cross-engine interoperability.
-9. [Hybrid Tables](https://docs.snowflake.com/en/user-guide/tables-hybrid)  
-Row-based table type optimized for low-latency, high-concurrency transactional workloads. Enforces primary key, foreign key, and unique constraints with row-level locking and index-based reads/writes.
-10. [Interactive Tables & Warehouses](https://docs.snowflake.com/en/user-guide/interactive)  
-Specialized tables and warehouses for sub-second query latency at high concurrency. Designed for real-time dashboards, data APIs, and serving precomputed results with auto-refresh support.
-11. [Snowflake Open Catalog](https://docs.snowflake.com/en/user-guide/opencatalog/overview)  
-Managed Iceberg REST catalog service built on Apache Polaris. Provides centralized, secure read/write access to Iceberg tables across REST-compatible query engines.
-12. [Semantic Views](https://docs.snowflake.com/en/user-guide/views-semantic/overview)  
-Define curated business definitions with dimensions, facts, and metrics. Powers Cortex Analyst for consistent natural language querying.
-13. [Snowpark API](https://docs.snowflake.com/en/developer-guide/snowpark/index)  
+2. [Snowpark API](https://docs.snowflake.com/en/developer-guide/snowpark/index)  
 Build data pipelines, UDFs, and stored procedures in Python, Java, or Scala that run directly on Snowflake compute.
-14. [pandas on Snowflake](https://docs.snowflake.com/en/developer-guide/snowpark/python/pandas-on-snowflake)  
+3. [pandas on Snowflake](https://docs.snowflake.com/en/developer-guide/snowpark/python/pandas-on-snowflake)  
 Run pandas code at scale on Snowflake with minimal rewrites. Hybrid execution automatically routes operations to local pandas or the Snowflake engine based on data size.
-15. [Snowpark Connect for Spark](https://docs.snowflake.com/en/developer-guide/snowpark-connect/snowpark-connect-overview)  
+4. [Snowpark Connect for Spark](https://docs.snowflake.com/en/developer-guide/snowpark-connect/snowpark-connect-overview)  
 Run existing PySpark DataFrame and Spark SQL workloads directly on Snowflake compute without managing a Spark cluster. Supports interactive development and batch submission via Snowpark Submit.
-16. [Tasks & Streams](https://docs.snowflake.com/en/user-guide/tasks-intro)  
+5. [Tasks & Streams](https://docs.snowflake.com/en/user-guide/tasks-intro)  
 Schedule and orchestrate SQL and procedural logic with tasks. Capture change data with streams for incremental processing.
-17. [dbt Projects on Snowflake](https://docs.snowflake.com/en/user-guide/data-engineering/dbt-projects-on-snowflake)  
+6. [dbt Projects on Snowflake](https://docs.snowflake.com/en/user-guide/data-engineering/dbt-projects-on-snowflake)  
 Deploy, execute, and schedule dbt Core projects natively in Snowflake as versioned DBT PROJECT objects. Includes Workspaces integration, Snowflake CLI support, task-based scheduling, and CI/CD pipelines.
+
+### Semantic Layer
+
+1. [Semantic Views](https://docs.snowflake.com/en/user-guide/views-semantic/overview)  
+Define curated business definitions with dimensions, facts, and metrics. Powers Cortex Analyst for consistent natural language querying.
 
 
 ## Cortex AI & Generative AI
@@ -254,6 +294,8 @@ Discover and access 2,700+ listings from 670+ providers, including datasets, API
 
 ## Industry Solutions
 
+### Industries
+
 1. [Industry Solutions Overview](https://www.snowflake.com/en/solutions/industries/)  
 Landing page for Snowflake's industry-specific solutions, use cases, and partner ecosystems.
 2. [Advertising, Media & Entertainment](https://www.snowflake.com/en/solutions/industries/advertising-media-entertainment/)  
@@ -274,11 +316,14 @@ Consolidate network, subscriber, and usage data for churn prediction, network op
 FedRAMP-authorized platform for government and education. Supports citizen services, fraud detection, public health surveillance, and cross-agency data sharing.
 10. [Travel & Hospitality](https://www.snowflake.com/en/solutions/industries/travel-hospitality/)  
 Unify booking, loyalty, and operational data for revenue management, personalized guest experiences, and real-time demand forecasting.
-11. [Cybersecurity](https://www.snowflake.com/en/solutions/departments/cybersecurity/)  
+
+### Departments
+
+1. [Cybersecurity](https://www.snowflake.com/en/solutions/departments/cybersecurity/)  
 Use Snowflake as a security data lake for detection and response, threat hunting, cloud security management, and compliance. Integrates with SIEM partners to replace or augment legacy security tooling.
-12. [Marketing](https://www.snowflake.com/en/solutions/departments/marketing/)  
+2. [Marketing](https://www.snowflake.com/en/solutions/departments/marketing/)  
 Build Customer 360 profiles, modernize CDPs, and maximize marketing ROI. Covers identity resolution, audience segmentation, campaign measurement, and privacy-safe data collaboration.
-13. [Finance](https://www.snowflake.com/en/solutions/departments/finance/)  
+3. [Finance](https://www.snowflake.com/en/solutions/departments/finance/)  
 Unify financial data for improved reporting, forecasting, and payment integrity. Provides real-time insights across budgeting, planning, and revenue analytics to support data-driven finance operations.
-14. [Information Technology](https://www.snowflake.com/en/solutions/departments/information-technology/)  
+4. [Information Technology](https://www.snowflake.com/en/solutions/departments/information-technology/)  
 Simplify IT operations, reduce infrastructure costs, and boost organizational agility. Consolidate data management, enhance security visibility, and accelerate productivity across the enterprise.
