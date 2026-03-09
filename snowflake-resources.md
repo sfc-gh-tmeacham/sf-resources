@@ -1,7 +1,7 @@
 # Don't Panic! A Curated Collection of Snowflake Resources
 
 ## Overview
-A curated guide to Snowflake resources for practitioners at every level — from getting started with free training to building production pipelines, deploying AI, and operating securely at scale.
+A curated guide to Snowflake resources for practitioners at every level — from free training and certifications to developer tools, Streamlit apps, data engineering pipelines, Cortex AI, machine learning, governance, cost management, and industry-specific solutions.
 
 ## Table of Contents
 - [Learning & Certification](#learning--certification)
