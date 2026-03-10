@@ -4,6 +4,8 @@ A curated collection of Snowflake resources for practitioners at every level —
 
 ## Learning & Certification
 
+- [The AI Data Cloud Explained](https://www.snowflake.com/en/why-snowflake/what-is-data-cloud/) — High-level overview of Snowflake's unified platform — how it brings together data warehousing, data lakes, data engineering, data science, data sharing, and AI/ML into a single, governed experience.
+
 ### Courses & Training
 
 - [Snowflake University](https://learn.snowflake.com/en/#learningTracks) — Free self-paced training paths, role-based learning journeys, Hands-On Essentials badges, and Level Up micro-courses.
@@ -52,6 +54,7 @@ A curated collection of Snowflake resources for practitioners at every level —
 
 - [Inside the AI Data Cloud](https://www.snowflake.com/blog/) — Get the latest information from the official Snowflake Blog.
 - [Snowflake Builders Blog](https://medium.com/snowflake) — Best practices, tips & tricks from Snowflake experts and community. Submissions welcome!
+- [Snowflake Engineering Blog](https://www.snowflake.com/en/engineering-blog/) — Technical deep dives from Snowflake's engineering team covering system internals, architecture decisions, infrastructure at scale, and behind-the-scenes innovation.
 
 ## Developer Tools
 
