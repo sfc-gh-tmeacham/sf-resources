@@ -87,6 +87,7 @@ A curated collection of Snowflake learning resources, documentation, tools, and 
 - **[Snowflake DevOps](https://docs.snowflake.com/en/developer-guide/builders/devops)** — Streamline the development lifecycle with Git integration, declarative object management (CREATE OR ALTER), parameterized Jinja templates, and CI/CD automation via Snowflake CLI and GitHub Actions.
 - **[Git Integration](https://docs.snowflake.com/en/developer-guide/git/git-overview)** — Clone remote Git repositories (GitHub, GitLab, Bitbucket, Azure DevOps, AWS CodeCommit) into Snowflake. Sync branches, tags, and commits, execute SQL files directly, and push changes from Workspaces, Notebooks, and Streamlit apps.
 - **[Observability](https://docs.snowflake.com/en/developer-guide/builders/observability)** — Instrument and monitor applications with OpenTelemetry-based logs, metrics, and traces collected in Snowflake event tables. Includes Snowsight visualizations, alerts, notifications, and third-party tool integration.
+- **[Terraform Provider](https://docs.snowflake.com/en/user-guide/terraform)** — Manage Snowflake resources as infrastructure as code using the official Terraform provider. Automate provisioning of databases, warehouses, roles, and other objects.
 
 ### Migration
 
@@ -212,6 +213,7 @@ A curated collection of Snowflake learning resources, documentation, tools, and 
 - **[External Lineage](https://docs.snowflake.com/en/user-guide/external-lineage)** — Extend lineage beyond Snowflake to include external sources and transformations. Ingest lineage from third-party tools via OpenLineage to see the full data flow.
 - **[Access History](https://docs.snowflake.com/en/user-guide/access-history)** — Track which users and roles accessed specific data objects and when. Query the ACCESS_HISTORY view for auditing, compliance, and understanding data usage patterns.
 - **[Cortex Descriptions](https://docs.snowflake.com/en/user-guide/ui-snowsight-cortex-descriptions)** — Automatically generate AI-powered descriptions for tables and columns in Snowsight. Improve data discovery and understanding with natural language documentation.
+- **[Universal Search](https://docs.snowflake.com/en/user-guide/ui-snowsight-universal-search)** — Search across all Snowflake objects from Snowsight. Find tables, views, databases, warehouses, and more using keywords, filters, and natural language.
 
 ### Security & Access
 
