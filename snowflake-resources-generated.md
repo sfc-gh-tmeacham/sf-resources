@@ -4,12 +4,20 @@ A curated collection of Snowflake resources for practitioners at every level —
 
 # Learning & Certification
 
+## Courses & Training
+
 - [Snowflake University](https://learn.snowflake.com/en/#learningTracks) - Free self-paced training paths, role-based learning journeys, Hands-On Essentials badges, and Level Up micro-courses.
-- [Key Concepts & Architecture](https://docs.snowflake.com/en/user-guide/intro-key-concepts) - Foundational overview of Snowflake's three-layer architecture (storage, compute, cloud services), table types (Snowflake, Iceberg, Hybrid), and integrated workloads across data engineering, analytics, AI/ML, and applications.
 - [Snowflake Northstar Education Program](https://www.snowflake.com/en/developers/northstar/) - Free Coursera courses created by Snowflake's developer advocates, including Intro to Snowflake, Data Engineering, Advanced Data Engineering, and Generative AI.
+
+## Hands-On Practice
+
+- [Key Concepts & Architecture](https://docs.snowflake.com/en/user-guide/intro-key-concepts) - Foundational overview of Snowflake's three-layer architecture (storage, compute, cloud services), table types (Snowflake, Iceberg, Hybrid), and integrated workloads across data engineering, analytics, AI/ML, and applications.
 - [Snowflake Quickstarts & Guides](https://www.snowflake.com/en/developers/guides/) - Interactive hands-on tutorials, quickstarts, and reference architectures across data engineering, AI/ML, app development, and more.
 - [Snowsight Templates](https://docs.snowflake.com/en/user-guide/ui-snowsight/snowsight-templates) - Interactive in-browser walkthroughs for exploring Snowflake features and use cases. Pre-configured worksheets, notebooks, or Streamlit apps with sample data — typically completed in under five minutes.
 - [Frosty Friday](https://frostyfriday.org/) - A series of weekly challenges released every Friday to help you practice and develop your Snowflake skills, created by Snowflake users, for Snowflake users.
+
+## Certification & Events
+
 - [Get SnowPro Certified](https://www.snowflake.com/certifications/) - Proctored exams at Associate, Core, Advanced (Architect, Data Engineer, Data Scientist, Administrator, Data Analyst, Security Engineer), and Specialty (Gen AI, Snowpark, Native Apps) levels.
 - [Webinars](https://www.snowflake.com/about/webinars/) - Live and on-demand webinars covering new features, best practices, and customer stories.
 
@@ -212,4 +220,4 @@ A curated collection of Snowflake resources for practitioners at every level —
 - [Cybersecurity](https://www.snowflake.com/en/solutions/departments/cybersecurity/) - Use Snowflake as a security data lake for detection and response, threat hunting, cloud security management, and compliance.
 - [Marketing](https://www.snowflake.com/en/solutions/departments/marketing/) - Build Customer 360 profiles, modernize CDPs, and maximize marketing ROI. Covers identity resolution, audience segmentation, campaign measurement, and privacy-safe data collaboration.
 - [Finance](https://www.snowflake.com/en/solutions/departments/finance/) - Unify financial data for improved reporting, forecasting, and payment integrity. Provides real-time insights across budgeting, planning, and revenue analytics.
-- [Information Technology](https://www.snowflake.com/en/solutions/departments/information-technology/) - Simplify IT operations, reduce infrastructure costs, and boost organizational agility. Consolidate data management, enhance security visibility, and accelerate productivity across the enterprise.
+- [Information Technology](https://www.snowflake.com/en/solutions/departments/information-technology/) - Simplify IT operations, reduce infrastructure costs, and boost organizational agility. Consolidate data management, enhanc                                                                          
