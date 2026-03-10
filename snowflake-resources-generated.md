@@ -5,6 +5,7 @@ A curated collection of Snowflake resources for practitioners at every level —
 ## Learning & Certification
 
 - [The AI Data Cloud Explained](https://www.snowflake.com/en/why-snowflake/what-is-data-cloud/) — High-level overview of Snowflake's unified platform — how it brings together data warehousing, data lakes, data engineering, data science, data sharing, and AI/ML into a single, governed experience.
+- [Snowflake Summit](https://www.snowflake.com/en/summit/) — Snowflake's annual user conference featuring keynotes, technical sessions, hands-on labs, product announcements, and networking with the global data community.
 
 ### Courses & Training
 
