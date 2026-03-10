@@ -50,6 +50,12 @@
     --shadow-md: 0 4px 12px rgba(41,181,232,0.15);
     --footer-bg: rgba(15,23,42,0.95);
   }
+  /* Scrollbar styling */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 5px; border: 2px solid var(--bg); }
+  ::-webkit-scrollbar-thumb:hover { background: var(--text-light); }
+  * { scrollbar-width: thin; scrollbar-color: var(--border) var(--bg); }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   body {
