@@ -120,13 +120,34 @@ A curated collection of Snowflake resources for practitioners at every level —
 
 # Cortex AI & Generative AI
 
+## LLM Inference
+
 - [Snowflake Cortex AI Overview](https://docs.snowflake.com/en/guides-overview-ai-features) - Overview of Snowflake's AI capabilities including Cortex AI Functions, Cortex Analyst, Cortex Search, Cortex Agents, and Snowflake Intelligence.
 - [Cortex AI Functions](https://docs.snowflake.com/en/user-guide/snowflake-cortex/llm-functions) - Serverless AI functions that run directly in SQL: AI_COMPLETE, AI_EXTRACT, AI_CLASSIFY, AI_SENTIMENT, AI_SUMMARIZE, AI_TRANSLATE, AI_EMBED, AI_REDACT, AI_AGG, and more.
+- [Cortex REST API](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-rest-api) - Access frontier LLMs (Claude, GPT, Llama, Mistral, DeepSeek) via OpenAI- and Anthropic-compatible REST endpoints. Use existing SDKs with streaming, tool use, and structured output — all within the Snowflake governance perimeter.
+
+## Document Processing
+
+- [AI_PARSE_DOCUMENT](https://docs.snowflake.com/en/user-guide/snowflake-cortex/parse-document) - Extract text, data, layout elements, and images from documents. LAYOUT mode preserves tables, headers, and reading order as Markdown; OCR mode provides fast text extraction. Supports PDF, Word, and image files.
+- [AI_EXTRACT (Document Extraction)](https://docs.snowflake.com/en/user-guide/snowflake-cortex/document-extraction) - Extract structured information — entities, lists, and tables — from documents using natural language questions. Powered by arctic-extract with support for fine-tuning on custom document types.
+- [Image Extraction](https://docs.snowflake.com/en/user-guide/snowflake-cortex/image-extraction) - Extract images from PDFs and Word documents using AI_PARSE_DOCUMENT. Powers multimodal RAG, image classification, knowledge bases, and compliance workflows.
+- [Document Processing Playground](https://docs.snowflake.com/en/user-guide/snowflake-cortex/document-processing-playground) - Interactive Snowsight UI for exploring AI_EXTRACT and AI_PARSE_DOCUMENT. Upload documents, ask extraction questions, preview layout and OCR results, and copy code snippets.
+
+## Search & Retrieval
+
 - [Cortex Search](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-overview) - Vector and hybrid search service for building RAG applications and searchable knowledge bases over unstructured data.
 - [Cortex Analyst](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst) - Natural language to SQL for business users. Ask questions in plain English and get answers from your structured data.
+
+## Agents & Integrations
+
+- [Snowflake Intelligence](https://docs.snowflake.com/en/user-guide/snowflake-intelligence) - Natural language analytics for business users. Build "data agents" that answer questions and take actions across platforms. Customize the interface with your own logo and application name for a branded experience.
 - [Cortex Agents](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agent) - Build agentic AI workflows that orchestrate across structured and unstructured data sources using tools like Cortex Analyst and Cortex Search.
-- [Snowflake Intelligence](https://docs.snowflake.com/en/user-guide/snowflake-intelligence) - Natural language analytics for business users. Build "data agents" that answer questions and take actions across platforms.
+- [Cortex Agents REST API](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-rest-api) - Programmatically create, update, describe, list, delete, and run Cortex Agent objects via REST endpoints. Configure tools, instructions, orchestration budgets, and model selection.
+- [Cortex Agents for Microsoft Teams & M365 Copilot](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-teams-integration) - Embed Snowflake's conversational AI agents into Microsoft Teams and Microsoft 365 Copilot. Business users query data with natural language and get answers, tables, and charts without leaving their chat.
 - [Snowflake-Managed MCP Server](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp) - Expose Cortex Analyst, Cortex Search, Cortex Agents, SQL execution, and custom UDFs/procedures to external AI agents via the Model Context Protocol (MCP) standard.
+
+## Customization & Observability
+
 - [Cortex Fine-Tuning](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-finetuning) - Customize LLMs on your own data using parameter-efficient fine-tuning (PEFT). Supports Llama and Mistral model families with a fully managed, serverless workflow.
 - [AI Observability](https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-observability) - Evaluate and trace generative AI applications using LLM-as-a-judge metrics (accuracy, groundedness, relevance), side-by-side comparison, and step-level execution tracing.
 
@@ -147,6 +168,8 @@ A curated collection of Snowflake resources for practitioners at every level —
 - [Data Governance Overview](https://docs.snowflake.com/en/guides-overview-govern) - Central guide to governance features: data quality monitoring (DMFs), column-level security (masking policies), row access policies, object tagging, tag-based masking, sensitive data classification, access history, and object dependencies.
 - [Securing Snowflake](https://docs.snowflake.com/en/guides-overview-secure) - Network policies, network rules, private connectivity, session policies, SCIM provisioning, and role-based access control (RBAC).
 - [Trust Center](https://docs.snowflake.com/en/user-guide/trust-center/overview) - Evaluate and monitor security risks in your account. Includes CIS benchmark scanners, threat intelligence, MFA enforcement checks, and anomalous access detection.
+- [Data Sharing & Collaboration](https://docs.snowflake.com/en/guides-overview-sharing) - Overview of sharing options: listings (cross-region, monetizable, Marketplace-ready), direct shares, Data Exchanges, and Reader Accounts for non-Snowflake users.
+- [Organizational Listings (Internal Marketplace)](https://docs.snowflake.com/en/user-guide/collaboration/listings/organizational/org-listing-about) - Share data products securely within your organization via the Internal Marketplace. Providers publish curated listings for internal discovery, with access controlled by account targeting and RBAC.
 - [Data Clean Rooms](https://docs.snowflake.com/en/user-guide/cleanrooms/introduction) - Secure, isolated environments for privacy-preserving data collaboration. Combine and analyze data across organizations without exposing raw records.
 - [Backups](https://docs.snowflake.com/en/user-guide/backups) - Point-in-time snapshots of tables, schemas, or databases for disaster recovery, regulatory compliance (SEC 17a-4, FINRA, CFTC), and cyber resilience.
 - [Compliance Center](https://trust.snowflake.com/) - Self-service portal to download Snowflake's security certifications and compliance reports — SOC 1/2, ISO 27001, FedRAMP, HITRUST, PCI-DSS, GxP, C5, IRAP, CJIS, TISAX, and more.
