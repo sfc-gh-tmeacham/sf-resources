@@ -50,6 +50,7 @@ A curated collection of Snowflake resources for practitioners at every level —
 ## In-Browser Editors
 
 - [Workspaces](https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces) - Unified SQL editor in Snowsight with file-based organization, side-by-side results, inline Copilot, and Git integration. Replacing Worksheets as the default editor.
+- [Shared Workspaces](https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces-shared) - Create team workspaces with wiki-style collaboration. Organize files in a shared database and schema, publish drafts, resolve conflicts, and control access with role-based sharing.
 - [Snowflake Notebooks](https://docs.snowflake.com/en/user-guide/ui-snowsight/notebooks) - Jupyter-like notebooks running directly in Snowflake with SQL, Python, and Markdown. Available in Warehouse Runtime or Container Runtime (with GPU support).
 - [Notebooks in Workspaces](https://docs.snowflake.com/en/user-guide/ui-snowsight/notebooks-in-workspaces/notebooks-in-workspaces-overview) - Enhanced notebook experience with full Jupyter compatibility, terminal access, file management, and a pre-built container runtime optimized for AI/ML with CPU and GPU support.
 
