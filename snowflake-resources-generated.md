@@ -189,6 +189,9 @@ A curated collection of Snowflake learning resources, documentation, tools, and 
 
 - **[ML Jobs](https://docs.snowflake.com/en/developer-guide/snowflake-ml/ml-jobs/overview)** — Run ML workloads on Snowflake compute pools from any environment (VS Code, PyCharm, Jupyter). Dispatch functions, files, or modules to Container Runtime with GPU support.
 - **[Experiments](https://docs.snowflake.com/en/developer-guide/snowflake-ml/experiments)** — Track and compare model training runs — log parameters, metrics, and artifacts, then evaluate results side-by-side in Snowsight.
+- **[Hyperparameter Optimization](https://docs.snowflake.com/en/developer-guide/snowflake-ml/container-hpo)** — Automatically tune model hyperparameters using distributed search strategies. Run grid, random, or Bayesian optimization on Snowflake compute pools.
+- **[Distributed Training](https://docs.snowflake.com/en/developer-guide/snowflake-ml/distributed-training)** — Scale model training across multiple nodes using PyTorch distributed primitives. Train large models on GPU clusters managed by Snowflake compute pools.
+- **[Training Across Partitions](https://docs.snowflake.com/en/developer-guide/snowflake-ml/train-models-across-partitions)** — Train separate models in parallel across data partitions. Ideal for segmented forecasting, per-customer models, or group-level predictions.
 
 ### Model Management
 
@@ -204,6 +207,11 @@ A curated collection of Snowflake learning resources, documentation, tools, and 
 
 - **[Snowflake Horizon Catalog](https://docs.snowflake.com/en/user-guide/snowflake-horizon)** — Unified governance and discovery layer for data, apps, and models. Provides metadata, lineage, sensitive data classification, and access controls.
 - **[Data Governance Overview](https://docs.snowflake.com/en/guides-overview-govern)** — Central guide to governance features: data quality monitoring (DMFs), column-level security (masking policies), row access policies, object tagging, tag-based masking, sensitive data classification, access history, and object dependencies.
+- **[Data Classification](https://docs.snowflake.com/en/user-guide/classify-intro)** — Automatically detect and classify sensitive data like PII, financial identifiers, and health information. Apply system tags based on semantic and privacy categories.
+- **[Data Lineage in Snowsight](https://docs.snowflake.com/en/user-guide/ui-snowsight-lineage)** — Visualize upstream and downstream dependencies for tables, views, and columns. Trace data flow, understand impact, and explore object relationships in an interactive graph.
+- **[External Lineage](https://docs.snowflake.com/en/user-guide/external-lineage)** — Extend lineage beyond Snowflake to include external sources and transformations. Ingest lineage from third-party tools via OpenLineage to see the full data flow.
+- **[Access History](https://docs.snowflake.com/en/user-guide/access-history)** — Track which users and roles accessed specific data objects and when. Query the ACCESS_HISTORY view for auditing, compliance, and understanding data usage patterns.
+- **[Cortex Descriptions](https://docs.snowflake.com/en/user-guide/ui-snowsight-cortex-descriptions)** — Automatically generate AI-powered descriptions for tables and columns in Snowsight. Improve data discovery and understanding with natural language documentation.
 
 ### Security & Access
 
@@ -219,6 +227,7 @@ A curated collection of Snowflake learning resources, documentation, tools, and 
 ### Compliance & Recovery
 
 - **[Backups](https://docs.snowflake.com/en/user-guide/data-backup)** — Point-in-time snapshots of tables, schemas, or databases for disaster recovery, regulatory compliance (SEC 17a-4, FINRA, CFTC), and cyber resilience.
+- **[Replication & Failover](https://docs.snowflake.com/en/user-guide/replication-intro)** — Replicate databases, shares, and account objects across regions and cloud providers. Enable failover groups for business continuity and disaster recovery.
 - **[Compliance Center](https://www.snowflake.com/en/why-snowflake/trust-and-safety/compliance/)** — Self-service portal to download Snowflake's security certifications and compliance reports — SOC 1/2, ISO 27001, FedRAMP, HITRUST, PCI-DSS, GxP, C5, IRAP, CJIS, TISAX, and more.
 
 ---
