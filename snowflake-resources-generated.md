@@ -218,6 +218,7 @@ A curated collection of Snowflake learning resources, documentation, tools, and 
 ### Security & Access
 
 - **[Securing Snowflake](https://docs.snowflake.com/en/guides-overview-secure)** — Network policies, network rules, private connectivity, session policies, SCIM provisioning, and role-based access control (RBAC).
+- **[Private Connectivity](https://docs.snowflake.com/en/user-guide/private-connectivity-inbound)** — Connect to Snowflake over private networks using AWS PrivateLink, Azure Private Link, or Google Cloud Private Service Connect. Keep traffic off the public internet.
 - **[Trust Center](https://docs.snowflake.com/en/user-guide/trust-center/overview)** — Evaluate and monitor security risks in your account. Includes CIS benchmark scanners, threat intelligence, MFA enforcement checks, and anomalous access detection.
 
 ### Sharing & Collaboration
@@ -228,6 +229,7 @@ A curated collection of Snowflake learning resources, documentation, tools, and 
 
 ### Compliance & Recovery
 
+- **[Compliance Overview](https://docs.snowflake.com/en/user-guide/intro-compliance)** — Overview of Snowflake's compliance certifications and regulatory frameworks including HIPAA, SOC 2, PCI-DSS, FedRAMP, GDPR, and industry-specific standards.
 - **[Backups](https://docs.snowflake.com/en/user-guide/data-backup)** — Point-in-time snapshots of tables, schemas, or databases for disaster recovery, regulatory compliance (SEC 17a-4, FINRA, CFTC), and cyber resilience.
 - **[Replication & Failover](https://docs.snowflake.com/en/user-guide/replication-intro)** — Replicate databases, shares, and account objects across regions and cloud providers. Enable failover groups for business continuity and disaster recovery.
 - **[Compliance Center](https://www.snowflake.com/en/why-snowflake/trust-and-safety/compliance/)** — Self-service portal to download Snowflake's security certifications and compliance reports — SOC 1/2, ISO 27001, FedRAMP, HITRUST, PCI-DSS, GxP, C5, IRAP, CJIS, TISAX, and more.
